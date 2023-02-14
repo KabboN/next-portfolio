@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
-import { FaGithub, FaLinkedinIn, FaFacebook } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn, FaFacebook, FaWhatsapp } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 // import { useRouter } from 'next/router';
 import logo3 from '../public/assets/logo3.png'
@@ -203,12 +203,12 @@ const Navbar = () => {
                     <FaGithub />
                   </div>
                 </a>
-                <Link href='/#contact'>
+                <Link href='/https://wa.me/01777960906'>
                   <div
                     onClick={() => setNav(!nav)}
                     className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
                   >
-                    <AiOutlineMail />
+                    <FaWhatsapp />
                   </div>
                 </Link>
                 <Link href='/resume'>

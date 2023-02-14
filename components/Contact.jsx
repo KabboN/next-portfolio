@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { FaGithub, FaLinkedinIn, FaFacebook } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn, FaFacebook, FaWhatsapp } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import ContactImg from '../public/assets/contact.jpg';
 
@@ -33,6 +33,13 @@ const Contact = () => {
                   I am available for freelance or full-time positions. Contact
                   me and let&apos;s talk.
                 </p>
+                <p className='py-4'>
+                  Contact No: 01777960906, 01818659745
+                </p>
+                <p className='py-4'>
+                Email: tamalsarker@yahoo.com
+                </p>
+
               </div>
               <div>
                 <p className='uppercase pt-8'>Connect With Me</p>
@@ -64,10 +71,15 @@ const Contact = () => {
                       <FaGithub />
                     </div>
                   </a>
-
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                    <AiOutlineMail />
-                  </div>
+                  <a
+                    href='https://wa.me/01777960906'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                      <FaWhatsapp />
+                    </div>
+                  </a>
                   <Link href='/resume'>
                     <a>
                       <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
